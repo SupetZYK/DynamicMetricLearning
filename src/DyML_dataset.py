@@ -43,42 +43,6 @@ class DyMLDataset:
             self.img_for_class[k] = list(self.img_for_class[k].values())
 
 
-    # def load(self):
-    #     # re-arange data
-    #     self.load_config_file()
-    #     # self.datas = json.load(open(os.path.join(self.dataset_path, 'protocols', 'train.json')))
-    #     self.fine_id_map = defaultdict(list)
-    #     self.mid_id_map = defaultdict(list)
-    #     self.coarse_id_map = defaultdict(list)
-    #
-    #     for idx, data in enumerate(self.datas):
-    #         # import ipdb;ipdb.set_trace()
-    #         fine_id = data['fine_g_label']
-    #         mid_id = data['middle_g_label']
-    #         coarse_id = data['coarse_g_label']
-    #         self.fine_id_map[fine_id].append(idx)
-    #         self.mid_id_map[mid_id].append(idx)
-    #         self.coarse_id_map[coarse_id].append(idx)
-    #
-    #     # generate bi-directional map between id and label
-    #     self.fine_id2label = dict()
-    #     self.mid_id2label = dict()
-    #     self.coarse_id2label = dict()
-    #     self.fine_label2id = dict()
-    #     self.mid_label2id = dict()
-    #     self.coarse_label2id = dict()
-    #
-    #     for idx, fid in enumerate(self.fine_id_map):
-    #         self.fine_id2label[fid] = idx
-    #         self.fine_label2id[idx] = fid
-    #
-    #     for idx, mid in enumerate(self.mid_id_map):
-    #         self.mid_id2label[mid] = idx
-    #         self.mid_label2id[idx] = mid
-    #
-    #     for idx, cid in enumerate(self.coarse_id_map):
-    #         self.coarse_id2label[cid] = idx
-    #         self.coarse_label2id[idx] = cid
         
 
     def __getitem__(self, index):
