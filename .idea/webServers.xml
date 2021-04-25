@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3bf944f1-5620-4eb8-aaed-b4898d7f4167" name="dyml" url="http:///">
+        <fileTransfer host="hh-b.brainpp.cn" port="22" rootFolder="/data/code/DyML" accessType="SFTP" authAgent="true">
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
